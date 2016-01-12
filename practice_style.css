@@ -1,0 +1,49 @@
+body,html {
+	font-size:14px;
+	color:#353535;
+}
+
+head {
+	text-align:center;
+	font-family:Georgia;
+	font-size:3rem;
+}
+
+	.background-pic {
+		position:absolute;
+		margin-top:0px;
+	}
+
+	.top-button {
+		position:fixed;
+		top:40px;
+		right:50px;
+		height:2rem;
+	}
+
+	@media(min-width:1127px) {
+		.background-pic {
+			width:125%;
+			height:auto;}
+		}
+
+nav ul li {
+			font-family:Helvetica;
+			font-weight:bold;
+			display:inline-block;
+			border-radius:4rem;
+			padding:10px 70px;
+			margin:5px 10px;
+			background-color:rgba(255,255,255,0.6);
+		}
+
+nav ul li:hover {
+			font-family:Helvetica;
+			font-weight:bold;
+			color:rgb(255,255,255);
+			display:inline-block;
+			border-radius:4rem;
+			padding:10px 70px;
+			margin:5px 10px ;
+			background-color:rgba(255,255,255,0.4);
+		}
