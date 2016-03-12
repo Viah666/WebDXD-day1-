@@ -9,3 +9,7 @@
 
 
 // console.log(email);
+
+$('.btn-close').click(function(e) {
+	$('.pop-wrapper').hide();
+});

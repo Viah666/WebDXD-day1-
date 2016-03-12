@@ -16,6 +16,8 @@ head {
 		margin-top:0px;
 		margin-left:0px;
 		text-align:left;
+		z-index: 0;
+		background-repeat: no-repeat;
 	}
 
 	.top-button {
@@ -37,7 +39,6 @@ nav ul li {
 			border-radius:2.5rem;
 			padding:8px 40px;
 			margin:0px 10px;
-			/*background-color:rgba(255,255,255,0.6);*/
 		}
 
 nav ul li:hover {
@@ -53,6 +54,7 @@ nav ul li:hover {
 		font-weight:bold;
 		font-size:3.33rem;
 		color:rgba(255,255,255,0.9);
+		z-index: 1;
 	}
 
 /*@media(min-height:1000px) {
@@ -63,6 +65,7 @@ h2 {
 	font-family:'Comic Sans MS';
 	font-style:italic;
 	color:rgba(255,255,255,0.8);
+	z-index: 1;
 }
 
 .nav2 {
@@ -76,10 +79,16 @@ h2 {
 p {
 	text-align:center;
 	font-family:courier;
-	margin-top:80px;
+	margin-top:40px;
 	margin-left:100px;
 	margin-right:100px;
 	color:white;
+}
+
+.intro-img {
+	height: 12%;
+	opacity: 0.8;
+	margin: 40px 110px;
 }
 
 @media(max-width:916px) {
@@ -98,22 +107,27 @@ p {
 	nav ul li {
 		display:block;
 		color:white;
+		border-radius: 3px;
+	}
+	nav ul li:hover {
+		background-color: rgba(255,255,255,0.7);
 	}
 }
 
 	.h3block {
 		text-align:center;
-		font-size:1rem;
 		color:#452b1e;
 		background-color:white; 
-		padding:6px; 
+		padding-bottom: 150px;
+		padding-top: 80px;
 		/*border-radius:0rem;*/
 		left:0rem;
-		margin:2rem 0rem;
+		margin:3rem 0rem 0rem 0rem;
+		/*display: inline-block;*/
 	}
 
 	.txtblock {
-		position:absolute;
+		/*position:absolute;*/
 		text-align:center;
 		color:#452b1e;
 		background-color:white;
@@ -159,3 +173,36 @@ p {
 		background-color: rgba(69,43,30,0.5);
 		color: white}
 
+	/*.pop-wrapper {
+		text-align: center;
+		position:absolute;
+		width: 100%;
+		top: 50%;
+		z-index: 2;
+		
+		transform:translateY(-50%);
+		--webkit--transform:translateY(-50%);
+	}*/
+
+	.pop-content {
+	text-align: center;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	left: 25%;														
+	border-radius: 15px;
+	width: 50%;
+	padding: 25px;
+	background-color: rgba(232,218,181,0.95);
+	color: #353535;
+	font-family: 'Arial Black';
+	font-weight: bold;
+	position: fixed;
+}
+
+.btn-close {
+	background-color: transparent;
+	border: 3px solid #DFC09A;
+	border-radius: 4px;
+	color: white;
+	z-index: 3;
+}
